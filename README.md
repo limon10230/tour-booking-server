@@ -1,7 +1,7 @@
 # tour-booking-server
 
 
-This project was bootstrapped with [private repo link](https://github.com/programming-hero-web-course1/tourism-or-delivery-website-client-side-limon10230).
+This project was bootstrapped with [private repo link](https://github.com/limon10230/tour-booking-server).
 
 ## Available Scripts
 
