@@ -92,6 +92,7 @@ async function run() {
                 })
         })
 
+
         // app.get('/orderedProduct', (req, res) => {
         //     ordersCollection.find({})
         //         .toArray((err, documents) => {
@@ -111,6 +112,10 @@ run().catch(console.dir);
 
 app.get('/', (req, res) => {
     res.send('tour booking server');
+
+});
+app.get('/', (req, res) => {
+    res.send('tour booking updated');
 
 });
 
