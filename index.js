@@ -76,21 +76,25 @@ async function run() {
         })
 
 
-        app.get('/addOrder', (req, res) => {
-            ordersCollection.find({})
-                .toArray((err, documents) => {
-                    console.log(documents);
-                    res.send(documents);
-                })
-        })
+        // app.get('/addOrder', (req, res) => {
 
-        app.get('/orderedProduct', (req, res) => {
-            ordersCollection.find({})
-                .toArray((err, documents) => {
-                    console.log(documents);
-                    res.send(documents);
-                })
-        })
+        //     const document = ordersCollection.find({}).toArray(documents)
+        //     res.send(document)
+        // })
+        app.get('/addOrder', async (req, res) => {
+            const document = servicesCollection.find({});
+            const serv = await document.toArray();
+            res.send(serv);
+        });
+
+
+        // app.get('/orderedProduct', (req, res) => {
+        //     ordersCollection.find({})
+        //         .toArray((documents) => {
+        //             // console.log(documents);
+        //             res.send(documents);
+        //         })
+        // })
 
 
         // app.get('/orderedProduct', (req, res) => {
